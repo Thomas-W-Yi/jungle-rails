@@ -1,2 +1,13 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<%= link_to [:admin, :products] do%>
+  <div class="alert alert-success" role="alert">
+  <h4>Number of products: <%= @products.length() %></h4>
+  </div>
+
+<% end%>
+
+<%= link_to [:admin, :products] do%>
+  <div class="alert alert-success" role="alert">
+  <h4>Number of categories: <%= @categories.length() %></h4>
+  </div>
+
+<% end%>

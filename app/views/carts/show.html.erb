@@ -5,10 +5,11 @@
   </header>
 
   <% if enhanced_cart.length() == 0 %>
-    <div class="alert alert-dark" role="alert">
+    <div class="alert alert-info" role="alert">
     You cart is empty!
+     <%= link_to 'Home', :root %>
     </div>
-    <%= link_to 'Home', :root %>
+   
 <% else %>
   
 
