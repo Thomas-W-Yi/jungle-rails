@@ -39,4 +39,9 @@ class ApplicationController < ActionController::Base
     cookies[:cart]
   end
 
+  def sale
+    Sale.first
+  end
+  helper_method :sale
+
 end
